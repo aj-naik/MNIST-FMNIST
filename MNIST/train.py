@@ -33,7 +33,7 @@ model.add(MaxPool2D(pool_size=(2,2)))
 model.add(Dropout(rate=0.2))
 model.add(Flatten())
 model.add(Dense(256,activation='relu'))
-model.add(Dropout(rate=0.4))
+model.add(Dropout(rate=0.2))
 model.add(Dense(num_classes,activation='softmax'))
 
 model.compile(keras.optimizers.Adam(),keras.losses.categorical_crossentropy,metrics=['accuracy'])
